@@ -19,6 +19,8 @@ public class ASG1sub1 {
     // write data line by line
        out.write(data1, 0, data1.length);
        out.write(data2, 0, data2.length);
+    // close fileout
+      out.close();
     }
     catch (IOException x) {
       System.err.println(x);
