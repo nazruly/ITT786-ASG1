@@ -3,7 +3,7 @@ import java.nio.file.*;
 import java.io.*;
 import java.nio.charset.Charset;
 
-public class ASG1sub1v2 {
+public class ASG1_1 {
 
   public static void main(String[] args) {
 
@@ -18,11 +18,10 @@ public class ASG1sub1v2 {
 try  {
     outputStream = new PrintWriter(new FileWriter("NazrulYusni.txt"));
     // write data line by line
-    for (int x = 0; x <= 1; x++) {
-        outputStream.println(myDetail[x]);
-    }
+    outputStream.println(myDetail[0]);
+    outputStream.println(myDetail[1]);
     // close file
-      outputStream.close();
+    outputStream.close();
     }
     catch (IOException x) {
       System.err.println(x);
